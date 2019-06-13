@@ -4,7 +4,8 @@
   "description": "ATM API",
   "main": "/src/server.ts",
   "scripts": {
-    "server:dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+    "server:dev": "tsc-watch --onSuccess \"node ./dist/server.js\"",
+    "test": "jest"
   },
   "repository": "git@github.com:patgrudniewski/atm.git",
   "author": "Patryk Grudniewski <patgrudniewski@gmail.com>",
@@ -18,6 +19,9 @@
     "typescript": "^3.5.2"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.14",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
     "tsc-watch": "^2.2.1"
   }
 }
