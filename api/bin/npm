@@ -1,0 +1,9 @@
+#! /bin/sh
+
+WD=$(dirname $(realpath $0))/..
+VERSION=12-alpine
+
+docker run --rm \
+    -v $WD/:/srv \
+    -w /srv \
+    -it node:$VERSION npm $@

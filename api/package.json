@@ -1,0 +1,20 @@
+{
+  "name": "atm-api",
+  "version": "1.0.0",
+  "description": "ATM API",
+  "main": "/src/server.ts",
+  "scripts": {
+    "server:dev": "tsc-watch --onSuccess \"node ./dist/server.js\""
+  },
+  "repository": "git@github.com:patgrudniewski/atm.git",
+  "author": "Patryk Grudniewski <patgrudniewski@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "express": "^4.17.1",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {
+    "tsc-watch": "^2.2.1"
+  }
+}
