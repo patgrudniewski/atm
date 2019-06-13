@@ -1,5 +1,10 @@
-import express from "express";
+import { create as createRouter } from './router';
 
-const app = express();
+import http from 'http';
 
-app.listen(3000);
+const port = 3000;
+const server = http.createServer(createRouter());
+
+server.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+});
