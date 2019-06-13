@@ -1,3 +1,4 @@
+import { handler as bodyParserHandler } from './bodyParser';
 import { handler as corsHandler } from './cors';
 
 import { Router } from 'express';
@@ -10,4 +11,4 @@ export const apply = (middlewares: Middleware[], router: Router) => {
     }
 };
 
-export default [corsHandler];
+export default [bodyParserHandler, corsHandler];
