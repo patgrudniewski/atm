@@ -1,0 +1,12 @@
+#! /usr/bin/env sh
+
+WD=$(dirname $(realpath $0))/..
+
+docker build \
+    --tag=atm-frontend:ng \
+    $WD
+
+docker run --rm \
+    -v $WD/:/srv \
+    -w /srv \
+    -it atm-frontend:ng ng $@

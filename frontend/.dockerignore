@@ -1,7 +1,5 @@
 /bin/
-/dist/
 /node_modules/
 /.dockerignore
 /.gitignore
-/Dockerfile
-/jest.config.js
+Dockerfile

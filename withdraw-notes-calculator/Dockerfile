@@ -3,7 +3,7 @@ FROM node:12-alpine
 COPY . /srv
 
 WORKDIR /srv
-RUN npm i
+RUN npm install
 
 EXPOSE 3000
 
