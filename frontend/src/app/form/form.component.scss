@@ -1,0 +1,33 @@
+form {
+    padding: 40px;
+    width: 40%;
+    max-width: 500px;
+    box-sizing: border-box;
+    float: left;
+
+    .field {
+        display: block;
+        width: 100%;
+    }
+
+    .actions {
+        text-align: right;
+    }
+}
+
+.result {
+    padding: 40px;
+    float: left;
+    width: 60%;
+    font-family: sans-serif;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    span.message {
+        &.error {
+            color: #B71C1C;
+        }
+    }
+}

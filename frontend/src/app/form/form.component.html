@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field class="field">
+        <input type="number" formControlName="amount" matInput placeholder="Amount to withdraw" />
+    </mat-form-field>
+    <div class="field actions">
+        <button mat-flat-button color="primary">Send</button>
+    </div>
+</form>
+<div class="result">
+    <h2>Result:</h2>
+    <span [ngClass]="{
+            'message': true,
+            'error': hasError()
+        }">
+        {{ getResultMessage() }}
+    </span>
+</div>
