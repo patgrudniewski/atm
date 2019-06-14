@@ -8,3 +8,10 @@ services:
       - "./api:/srv"
     ports:
       - "3000:3000"
+  withdraw-notes-calculator:
+    build:
+      context: ./withdraw-notes-calculator
+    volumes:
+      - "./withdraw-notes-calculator:/srv"
+    ports:
+      - "3001:3000"

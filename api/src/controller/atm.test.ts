@@ -21,7 +21,7 @@ test('putHandler throws ForbiddenException when any of putted notes has bigger a
     })).rejects.toThrow(new ForbiddenException('User not allowed to add cash to the machine'));
 });
 
-test('putHandler throws BadRequestException when non-existing note putted', async () => {
+test('putHandler throws BadRequestException when non-existing note putted', () => {
     expect(put.handler(<Request>{
         body: {
             notes: {

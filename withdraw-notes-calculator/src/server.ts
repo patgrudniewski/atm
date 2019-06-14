@@ -6,5 +6,5 @@ const port = 3000;
 const server = http.createServer(createRouter());
 
 server.listen(port, () => {
-    console.log(`API server is running on port ${port}`);
+    console.log(`Withdraw notes calculator server is running on port ${port}`);
 });
